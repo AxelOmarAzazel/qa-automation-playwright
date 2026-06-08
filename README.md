@@ -11,10 +11,11 @@ Proyecto de aprendizaje de automatización de pruebas utilizando Playwright y Ty
 
 ## Casos de prueba implementados
 
-* Validación de título de página
-* Búsqueda en documentación de Playwright
-* Uso de Page Object Model (POM)
-* Uso de Hooks (beforeEach)
+- Validación de título
+- Búsqueda en documentación
+- Navegación a Locators
+- Implementación de Page Object Model
+- Uso de Hooks
 
 ## Objetivo
 
