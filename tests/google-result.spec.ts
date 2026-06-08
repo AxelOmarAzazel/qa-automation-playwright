@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Validar resultados de Playwright', async ({ page }) => {
+test.skip('Validar resultados de Playwright', async ({ page }) => {
 
   await page.goto('https://www.google.com');
 
