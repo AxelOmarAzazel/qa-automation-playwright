@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { expect,Page } from '@playwright/test';
 
 export class PlaywrightHomePage {
 
@@ -12,11 +12,21 @@ export class PlaywrightHomePage {
         await this.page.getByRole('button', { name: 'Search' }).click();
     }
 
-    async search(text: string) {
-        await this.page.getByPlaceholder('Search docs').fill(text);
+    async search(term: string) {
+        const searchBox = this.page.getByPlaceholder('Search docs');
+        await expect(searchBox).toBeVisible();
+        await searchBox.fill(term);
     }
 
     async clickLocatorsResult() {
         await this.page.getByRole('link', { name: /Locators/ }).first().click();
+    }
+    
+    async validateResults() {
+
+    await expect(
+        this.page.getByRole('link').first()
+    ).toBeVisible();
+
     }
 }
