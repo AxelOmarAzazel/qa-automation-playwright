@@ -9,13 +9,26 @@ Proyecto de aprendizaje de automatización de pruebas utilizando Playwright y Ty
 * Git
 * GitHub
 
-## Casos de prueba implementados
+## Funcionalidades implementadas
 
-- Validación de título
-- Búsqueda en documentación
-- Navegación a Locators
-- Implementación de Page Object Model
-- Uso de Hooks
+### Automatización Web
+- Validación de títulos y elementos.
+- Búsquedas en la documentación de Playwright.
+- Uso de Page Object Model para mejorar la mantenibilidad.
+- Uso de Fixtures para reutilización de componentes.
+
+### Pruebas API
+- Consulta de usuarios mediante GET.
+- Validación de respuestas 404.
+- Validación de colecciones y contratos de respuesta.
+- Creación de usuarios mediante POST.
+- Actualización de usuarios mediante PUT.
+- Eliminación de usuarios mediante DELETE.
+
+### Control de versiones
+- Flujo de trabajo con Git y GitHub.
+- Uso de ramas y merges.
+- Gestión de commits descriptivos.
 
 ## Objetivo
 
