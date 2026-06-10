@@ -7,7 +7,7 @@ test('Pruebas API TOKEN', async ({request}) => {
     {
 
         headers: {
-        'x-api-key': process.env.REQRES_API_KEY!
+        'x-api-key': process.env.REQRES_API_KEY
         },
         data: {
         email: 'eve.holt@reqres.in',
@@ -23,7 +23,7 @@ test('Pruebas API TOKEN', async ({request}) => {
     {
 
         headers: {
-            'x-api-key': process.env.REQRES_API_KEY!,
+            'x-api-key': process.env.REQRES_API_KEY,
             Authorization: `Bearer ${token}`
             }
     });
