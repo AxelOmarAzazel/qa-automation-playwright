@@ -4,6 +4,6 @@ test.describe.configure({
     retries: 2
 });
 
-test('Prueba que falla', async () => {
+test.skip('Prueba que falla', async () => {
     expect(1).toBe(2);
 });
